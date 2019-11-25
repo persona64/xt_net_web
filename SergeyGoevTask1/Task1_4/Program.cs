@@ -15,7 +15,7 @@ namespace Task1_4
 
             if (Int32.TryParse(inputNumber, out numberOfTriangles))
             {
-                for (int i = 0; i < numberOfTriangles; i++)
+                for (int i = 0; i <= numberOfTriangles; i++)
                 {
                     for (int j = 0; j < i; j++)
                     {

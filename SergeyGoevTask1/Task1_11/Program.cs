@@ -12,11 +12,15 @@ namespace Task1_11
 
         static void Main(string[] args)
         {
-            string inputString = Console.ReadLine();
-            var arrayOfStrings = inputString.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
-            int averageLenght = inputString.Aggregate(0, (count, nextWord) => count += nextWord) / inputString.Length;
+            string WordString = "Skjnnf oiawfo jesef, oieff uei ihef kweubf uohdfb ilwhdu ucz";
+            var Mas = WordString.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
 
-            Console.WriteLine("Средняя длина строки: {0}", averageLenght);
+            foreach (string s in Mas)
+            {
+                WordString += s.Length;
+                Console.WriteLine("Средняя длина строки: {0}", WordString.Length/2);
+            }
+            
 
             Console.ReadLine();
         }
