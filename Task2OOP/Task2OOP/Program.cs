@@ -10,13 +10,35 @@ namespace Task2OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите радиус круга");
-            Circle circle = new Circle();
-            int radius = Convert.ToInt32(Console.ReadLine());
-            circle.Radius = radius;
+            int radius;
+            int xCoordinat;
+            int yCoordinat;
 
-            var area = (circle as Circle).CirlceArea();
-            var areaLength = (circle as Circle).CircleLength();
+            Console.WriteLine("Введите координату Х: ");
+            while(!int.TryParse(Console.ReadLine(), out xCoordinat))
+            {
+                Console.WriteLine("Введите целое число");
+            }
+
+            Console.WriteLine("Введите координату Y: ");
+            while(!int.TryParse(Console.ReadLine(), out yCoordinat))
+            {
+                Console.WriteLine("Введите целое число");
+            }
+
+            Console.WriteLine("Введите радиус: ");
+            while(!int.TryParse(Console.ReadLine(), out radius))
+            {
+                Console.WriteLine("Введите целое число");
+            }
+
+            Round circle = new Round(xCoordinat, yCoordinat, radius);
+            circle.Radius = radius; 
+            circle.X = xCoordinat;
+            circle.Y = yCoordinat;
+            var area = (circle as Round).CirlceArea();
+            var areaLength = (circle as Round).CircleLength();
+            Console.WriteLine("Координаты Х: {0} и Y: {1}", xCoordinat, yCoordinat);
             Console.WriteLine("Площадь круга равна: " + area);
             Console.WriteLine("Длина окружности равна: " + areaLength);
             Console.ReadLine();
@@ -29,12 +51,14 @@ namespace Task2OOP
         public int X;
         public int Y;
         public int Radius;
-    }
-
-    class Circle : Round
-    {
+        
+        public Round(int x, int y, int radius)
+        {
+            X = x;
+            Y = y;
+            Radius = radius;
+        }
         public double CirlceArea() => Math.PI * Radius * Radius;
         public double CircleLength() => 2 * Math.PI * Radius;
     }
-
 }
