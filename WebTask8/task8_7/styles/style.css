@@ -1,0 +1,25 @@
+body{
+    width: 1200px;
+}
+
+.greenText{
+    background-color: seagreen;
+    color: white;
+    float: left;
+    width: 100%;
+}
+
+.greenText p {
+    padding-left: 10px;
+}
+
+.grayText{
+    float: left;
+    background-color: gray;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.grayText p{
+    padding-left: 10px;
+}
