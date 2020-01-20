@@ -1,0 +1,28 @@
+body{
+    width:1200px;
+}
+
+.triangle{
+    background: rgb(136,183,213);
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 45%;
+    top:10%;
+    float: left;
+    border: 12px solid rgb(194,225,245);
+}
+
+.rectangle{
+    position: absolute;
+    margin-top: 7%;
+    float: left;
+    width: 99%;
+    height: 200px;
+    background: rgb(136,183,213);
+    border: 12px solid rgb(194,225,245);
+}
+
+
+

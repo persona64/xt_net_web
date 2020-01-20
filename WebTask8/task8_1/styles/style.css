@@ -1,0 +1,14 @@
+.menu1{
+    width: 200px;
+    background-color: rgb(249, 228, 151);
+    color: rgb(136,0,0);
+    border-radius:10px;
+    box-shadow: 0 0 0 1px rgb(144, 135, 102),
+                7px 7px 0 0 rgb(136,0,0);
+    font-size: 14px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 5px 7px 5px 10px;
+}

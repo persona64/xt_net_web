@@ -1,0 +1,86 @@
+body{
+    width: 1200px;
+    background-color: rgb(78,99,121);
+}
+
+.variants{
+    position: absolute;
+    left: 10%;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0 0 10px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 30px 10px rgba(0,0,0,0.5);
+}
+
+.virtual{
+    text-align: center;
+    float: left;
+    padding: 0 0 0 105px;
+    
+}
+
+h2{
+    color:orangered;
+}
+
+img{
+    width:80px;
+}
+
+.image1{
+    padding-top: 20px;
+    padding-left: 80px;
+    width: 80px;
+    height:52px;
+}
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.image2{
+    padding-top: 20px;
+    padding-left: 80px;
+    width: 80px;
+    height:52px;
+}
+.image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -52px;
+}
+
+.image3{
+    padding-top: 20px;
+    padding-left: 80px;
+    width: 80px;
+    height:52px;
+}
+.image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -105px;
+}
+
+.vl{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: -70px;
+    float:right;
+    border-left: 2px solid green;
+    height: 200px;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    margin-bottom: 20px;
+}
