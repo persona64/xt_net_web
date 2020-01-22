@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+
+h1{
+    position: absolute;
+    margin-top: 3px;
+    color:orange;
+    transform: rotate(180deg);
+}
+
+.rect1{
+    position: relative;
+    z-index: 5;
+    margin-left: 0px;
+	border-bottom: 100px solid black;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+    width: 100px;
+    transform: rotate(180deg);
+}
+
+.rect2{
+    margin-right: 10%;
+    margin-left: 50px;
+    margin-top: -40px;
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
