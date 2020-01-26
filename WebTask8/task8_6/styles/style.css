@@ -1,0 +1,38 @@
+body{
+    background-color: #333;
+}
+
+div{
+    background: repeating-linear-gradient(to bottom, transparent,
+    transparent 20px, #333 20px, #333 20px),
+    linear-gradient(to top, #ffd059, #ff8c00);
+    width:40px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 9px 9px 0 0;
+    vertical-align: bottom;
+}
+
+.level1{
+    height: 116px;
+}
+
+.level2{
+    height: 44px;
+}
+
+.level3{
+    height: 188px;
+}
+
+.level4{
+    height: 213px;
+}
+
+.level5{
+    height: 116px;
+}
+
+.level6{
+    height: 68px;
+}

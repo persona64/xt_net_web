@@ -1,0 +1,66 @@
+ul {
+    
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+}
+
+li{
+    
+    margin:20px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(  white, gray, white);
+}
+
+.triangle{
+    position: absolute;
+    top:1px;
+    left:75px;
+    width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-left: 12px solid lightgray;
+	border-bottom: 13px solid transparent;
+}
+
+.triangle :hover{
+}
+
+li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    font-weight: 500;
+} 
+
+li:hover{
+    background: linear-gradient(white ,lightgreen ,white);
+}
+
+li:hover a{
+    color: white;
+}
+
+nav{
+    width:500px;
+    margin:auto;
+}
+
+li:not(:last-child)::after{
+    content: '';
+    top:4px;
+    left: 100px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background: white;
+    box-sizing: border-box;
+    z-index: 1;
+}
