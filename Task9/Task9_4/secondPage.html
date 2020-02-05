@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsum iste perspiciatis mollitia ipsam deserunt optio voluptatibus
+            quaerat, saepe, eum quibusdam fugiat id rerum eveniet voluptas,
+            earum quos pariatur obcaecati doloribus? Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Repudiandae, quia consequatur itaque
+            error doloremque adipisci cupiditate iusto perferendis! Doloribus dolor 
+            deleniti assumenda esse hic optio adipisci dicta vel ut voluptas. Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit. Repellat, et aperiam a necessitatibus odio
+            laborum vel. Consequatur ipsa libero assumenda maxime laborum doloremque quos dolores,
+            qui nostrum facilis soluta laboriosam?ditate iusto perferendis! Doloribus dolor 
+            deleniti assumenda esse hic optio adipisci dicta vel ut voluptas. Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit. Repellat, et aperiam a necessitatibus odio
+            laborum vel. Consequatur ipsa libero assumenda maxime laborum doloremque quos dolores,
+            qui nostrum facilis soluta lditate iusto perferendis! Doloribus dolor 
+            deleniti assumenda esse hic optio adipisci dicta vel ut voluptas. Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit. Repellat, et aperiam a necessitatibus odio
+            laborum vel. Consequatur ipsa libero assumenda maxime laborum doloremque quos dolores,
+            qui nostrum facilis soluta lditate iusto perferendis! Doloribus dolor 
+            deleniti assumenda esse hic optio adipisci dicta vel ut voluptas. Lorem ipsum dolor sit 
+            amet consectetur adipisicing elit. Repellat, et aperiam a necessitatibus odio
+            laborum vel. Consequatur ipsa libero assumenda maxime laborum doloremque quos dolores,
+            qui nostrum facilis soluta l
+        </p>
+    </div>
+
+    <button onclick="location.href = 'firstPage.html'"> <<< Вернуться назад <<< </button>
+
+    <span id="time"></span>
+
+    <script>
+        var i = 10;//время в сек.
+        function time(){
+         document.getElementById("time").innerHTML = i;//визуальный счетчик
+         i--;//уменьшение счетчика
+         if (i < 0) location.href = "thirdPage.html";//редирект
+        }
+        time();
+        setInterval(time, 1000);
+    </script>
+</body>
+</html>
